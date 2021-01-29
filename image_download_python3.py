@@ -20,7 +20,7 @@ def main():
 		os.makedirs(download_path + searchtext.replace(" ", "_"))
 
 	url = "https://www.google.co.in/search?q="+searchtext+"&source=lnms&tbm=isch"
-	driver = webdriver.Firefox()
+	driver = webdriver.Bing(executable_path='msedgedriver')
 	driver.get(url)
 
 	headers = {}
